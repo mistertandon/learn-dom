@@ -1,1 +1,1 @@
-# dl-03-rnn-text-generation
+# Document Object Model
