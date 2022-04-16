@@ -4,14 +4,29 @@
   <body>
     <a href="#">Hi</a>
     <script>
-      let docNodeType;
-      let docNodeName;
+      function documentNode() {
+        let docNodeType;
+        let docNodeName;
 
-      docNodeType = document.nodeType;
-      docNodeName = document.nodeName;
+        docNodeType = document.nodeType;
+        docNodeName = document.nodeName;
 
-      console.log(`docNodeType : ${docNodeType}`);
-      console.log(`docNodeName : ${docNodeName}`);
+        console.log(`document.nodeType : ${docNodeType}`);
+        console.log(`document.nodeName : ${docNodeName}`);
+      }
+
+      function documentDocTypeNode() {
+        let docNodeType;
+        let docNodeName;
+
+        docNodeType = document.doctype.nodeType;
+        docNodeName = document.doctype.nodeName;
+
+        console.log(`document.doctype.nodeType : ${docNodeType}`);
+        console.log(`document.doctype.nodeName : ${docNodeName}`);
+      }
+      documentNode();
+      documentDocTypeNode();
     </script>
   </body>
 </html>
